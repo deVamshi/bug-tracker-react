@@ -4,16 +4,16 @@ import "./App.css";
 import AppSiderBar from "./components/app_sidebar";
 import ProjectsList from "./components/projects_list";
 import ProjectDetails from "./components/project_details";
+import TicketDetails from "./components/ticket_details";
 
 function App() {
-  
   return (
     <div>
-      <div className="flex m-h-screen bg-gray-100">
+      <div className="flex h-screen bg-gray-100">
         <AppSiderBar />
-        <div className="flex-grow">
+        <div className="flex-grow overflow-scroll">
           <div className=" bg-wh-500 p-4">
-            <ProjectDetails />
+            <TicketDetails />
           </div>
         </div>
       </div>
